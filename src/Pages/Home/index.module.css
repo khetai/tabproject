@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.Body {
+  width: 100%;
+  height: 100%;
+  /* overflow-y: scroll; */
+}
+/* @media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .container {
+    padding: 10px;
+  }
+  .Body {
+    padding: 0px;
+  }
+} */

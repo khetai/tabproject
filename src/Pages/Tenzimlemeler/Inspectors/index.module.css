@@ -1,0 +1,603 @@
+.container {
+  width: 100%;
+  height: 100%;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  resize: both;
+}
+.Head {
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #0e4973;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10px;
+}
+.HeadTitle h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.Body {
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.FilterActive {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background: white;
+  color: white !important;
+  box-shadow: 0px 5px 16px 0px #94a0b740;
+}
+.HeadMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeadBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.HeadBody i {
+  font-size: 16px;
+  color: #0d3458;
+}
+.HeadBody li {
+  list-style: none;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.HeadBody li a {
+  text-decoration: none;
+}
+.paginate {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+}
+
+.HeadBody li a {
+  text-decoration: none;
+}
+
+.HeadFilter {
+  height: 0px;
+  transition: 0.5s ease all;
+  overflow: hidden;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.HeadFilter .FilterItems .FilterItem {
+  height: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.HeadFilteractive {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  border-top: 1px solid #0f5380;
+  transition: 0.5s ease all;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.FilterItems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.FilterItem {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.FilterItem2 {
+  width: 38%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* margin-right: 10px; */
+}
+.FilterItem2 label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.HeadAddButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.HeadAddButton:hover {
+  /* background-image: linear-gradient(77.62deg, #2173c5 17.96%, #1d91df 53.71%); */
+}
+.HeadAddButton img {
+  margin-right: 10px;
+}
+.HeadAddButton span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0d3458;
+}
+.FilterItem label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.FilterItem input {
+  padding: 10px 3%;
+  /* margin-bottom: 12px; */
+  border: none;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #3797d6;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid #0f5280;
+}
+.FilterItem input::placeholder {
+  color: #3797d6;
+}
+.FilterItem input:focus {
+  box-shadow: 0 0 12px #0d2e4e36;
+  background-color: white;
+  border: 1px solid #0f5380;
+  color: #0f5380;
+}
+.FilterItem {
+  width: 38%;
+  list-style: none !important;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.FilterItem select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  color: #0f5380;
+  margin-bottom: 12px;
+  box-shadow: 0 0 12px #0d2e4e36;
+  margin-top: 5px;
+  border: 1px solid #0f5380;
+}
+.FilterItem select:focus {
+  border: none;
+  border: 1px solid white;
+}
+
+.FilterItem select option {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px 0;
+  color: #0f5380;
+}
+.FilterItemButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+.ResetButton {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 5px;
+}
+.ResetButton img {
+  filter: invert(1);
+}
+.SearchButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  cursor: pointer;
+  text-align: center;
+  color: #0f5280;
+  font-size: 15px;
+}
+.paginate nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: transparent;
+  height: auto !important;
+  justify-content: right;
+  margin: 0 !important;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.actionTd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.Status1 {
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #54b766 !important;
+  background: #e0ffe585;
+  padding: 5px 0;
+}
+.Status2 {
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3daff0 !important;
+  background: #6fccff30;
+  padding: 5px 0;
+}
+.Status3 {
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #ff4f84 !important;
+  padding: 5px 0;
+  background: #ff002e14;
+}
+.Status4 {
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a4a4a4 !important;
+  background: #a4a4a433;
+  padding: 5px 0;
+}
+.HeadPrintMCup {
+  width: 324px;
+  height: 50px;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(77.62deg, #0d2e4f 2.96%, #0f5280 63.71%);
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  margin-bottom: 20px;
+}
+.HeadPrintCup {
+  background: #6fccff;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  width: 324px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 16px;
+}
+
+.TableTd {
+  padding: 0 10px;
+  color: #0f5380;
+  font-size: 16px;
+  font-weight: 600;
+}
+.TableBody .Action {
+  background-color: #cccc;
+  width: 40%;
+  margin: auto 0px;
+  border-radius: 1cm;
+}
+.ButtonDeactive {
+  width: 40px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+  left: 5%;
+  top: 50%;
+  transform: translateY(10%);
+  border: none;
+}
+.ButtonActive {
+}
+
+.ModalTitle {
+  width: 100%;
+  display: flex;
+  background-color: #0e4973;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.3cm;
+  padding: 10px 15px;
+}
+.ModalTitle .TitleText {
+  font-size: 16px;
+  color: white;
+}
+.ModalTitle .Button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f5280;
+  font-size: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.ModalContainer {
+  width: 100%;
+  padding: 20px 0px;
+}
+.ModalContainer .Inputs {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ModalContainer .InputContainer {
+  width: 47%;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  color: #0f5380;
+  /* justify-content: space-around; */
+  align-items: start;
+}
+.ModalContainer .InputContainer .Input {
+  width: 100%;
+  border: 1px solid #0f5280;
+  color: #0f5380;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.EditButton {
+  display: block;
+  width: 25%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  background-color: #0f5280;
+  margin-top: 20px;
+  float: right;
+  font-size: 17px;
+  color: #ffffff;
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+.switchcheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switchlabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 64px;
+  height: 25px;
+  background: grey;
+  border-radius: 70px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+.actionTd img {
+  width: 20px !important;
+}
+
+.switchlabel .switchbutton {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 23px;
+  height: 21px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.InputContainer select {
+  width: 100% !important;
+  padding: 8px !important;
+  font-size: 14px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid #0f5380;
+}
+.switchcheckbox:checked + .switchlabel .switchbutton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.ResetPassword {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.ResetPassword img {
+  width: 20px;
+}
+.switchlabel:active .switchbutton {
+  width: 60px;
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .ModalContainer .InputContainer .Input {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  .ModalContainer {
+    padding: 5px 0px;
+  }
+
+  .EditButton {
+    width: 20%;
+    margin-top: -45px;
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .InputContainer select {
+    width: 100% !important;
+    padding: 8px !important;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #0f5380;
+    color: #0f5380;
+  }
+  .FilterItem select option {
+    font-size: 14px;
+  }
+  .FilterItem select {
+    height: 35px;
+  }
+}
+/* 
+.context_menu {
+  position: fixed;
+  top: -500px;
+  left: 0;
+  width: 190px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  z-index: 1000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.context_menu ul {
+  list-style: none;
+}
+
+.context_menu ul li {
+  border-bottom: 1px solid silver;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.context_menu ul li:hover {
+  background-color: #f3f2f7;
+}
+
+.context_menu i {
+  margin-right: 12px;
+} */
+.deActive {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.Actives {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 3px;
+}

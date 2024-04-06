@@ -1,0 +1,143 @@
+select {
+  /* display: none; */
+}
+.select2 {
+  /* padding: 0 5px; */
+  height: auto;
+  color: #3e9cd9;
+  /* overflow: hidden; */
+}
+.select2.open {
+  height: 30px;
+}
+
+.open_ul {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: absolute;
+  background: white;
+  margin-top: 5px;
+  z-index: 1;
+}
+.open_ul ul {
+  height: 100%;
+}
+.select_close {
+  display: none;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+}
+.select2 input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 5%;
+  border: none;
+  outline: none;
+  cursor: default;
+  height: 40px;
+  font-size: 15px;
+  /* border: 1px solid black; */
+  color: #3e9cd9 !important;
+
+  border-radius: 10px;
+  background-color: #fdfdfd;
+}
+.select2 input::placeholder {
+  color: #3e9cd9 !important;
+}
+.select2 ul {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: default;
+  max-height: 200px;
+  border: 1px solid black;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: scroll;
+
+  /* display: none; */
+}
+.select2 ul li {
+  padding: 0 5px;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 0;
+}
+
+.select2 ul li:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+.selectedItem {
+  background-color: #0d6efd;
+  color: white;
+}
+.select2 input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.Button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f5280;
+  font-size: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.Viewmore {
+  position: sticky;
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.Viewmore img {
+  filter: invert(1);
+  width: 16px;
+  height: 16;
+}
+.sl_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  top: 27%;
+}
+.fa-chevron-down {
+  cursor: pointer;
+  border-left: 1px solid hsl(0, 0%, 80%);
+  padding-left: 2px;
+  color: hsl(0, 0%, 80%);
+}
+.css-tj5bde-Svg {
+  color: hsl(0, 0%, 80%);
+  cursor: pointer;
+}
+.fa-x {
+  cursor: pointer;
+  font-size: 10px;
+  padding-left: 2px;
+  margin-right: 5px;
+  color: hsl(0, 0%, 80%);
+}

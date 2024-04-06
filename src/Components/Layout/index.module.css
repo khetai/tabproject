@@ -1,0 +1,54 @@
+main {
+  flex-grow: 1;
+  position: relative;
+  padding-top: 10px;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background-color: #f4f4f5;
+}
+
+header {
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.container {
+  margin: 0px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+  border-radius: 18px;
+  height: 98.5%;
+  overflow: hidden;
+}
+.minimizeHeader {
+  width: calc(100% - 360px) !important;
+}
+.notminimize {
+  width: calc(100% - 100px) !important;
+}
+@media (width: 1280px) {
+  header {
+    padding: 10px;
+  }
+  .container {
+    margin: 0px 20px;
+    height: 98%;
+  }
+  .minimizeHeader {
+    width: calc(100% - 270px) !important;
+  }
+  .notminimize {
+    width: calc(100% - 79px) !important;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  
+}

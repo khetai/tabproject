@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  font-family: Montserrat, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Head {
+  padding: 20px 30px;
+  font-size: 30px;
+  background: #6fc7ff36;
+  border-radius: 18px;
+  align-items: center;
+}
+.HeadMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeadBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.HeadBody li {
+  list-style: none;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.HeadBody li a {
+  text-decoration: none;
+}
+.HeadAddButton {
+  width: 140px;
+  height: 50px;
+  border-radius: 16px;
+  border: none;
+  background-image: linear-gradient(77.62deg, #0d2e4f 2.96%, #0f5280 63.71%);
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-size: 100% 100%;
+}
+
+.HeadAddButton:hover {
+  background-image: linear-gradient(77.62deg, #2173c5 17.96%, #1d91df 53.71%);
+  animation: background 3s linear infinite;
+}
+.HeadAddButton img {
+  margin-right: 10px;
+}
+.HeadAddButton span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.HeadPrintButton {
+  cursor: pointer;
+  width: 179px;
+  height: 50px;
+  border-radius: 16px;
+  border: none;
+  background: #ffffffa1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.HeadPrintButton:hover {
+  background: #5fb4ec;
+}
+.HeadPrintButton img {
+  margin-right: 10px;
+}
+.HeadPrintButton span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5280;
+}
+.HeadTitle h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+}
+.Body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.FormItems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+.FormItem {
+  width: 47%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.ClientTypes {
+  /* padding: 20px; */
+  width: 100%;
+  margin-right: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 10px;
+}
+.ClientTypes span {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+  margin-bottom: 10px;
+}
+.ClientTypes label {
+  width: 24%;
+  padding: 10px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  border: 1px solid black;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a4a4a4;
+}
+
+.ClientTypes label input {
+  margin-right: 5px;
+}
+.ClientTypes label:hover {
+  background: #6fccff;
+  color: #0f5380;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+}
+.ClientTypes input[type="radio"]:checked + label {
+  background: #6fccff;
+  color: #0f5380;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+}
+input[prop="checked"] + label {
+  background: #6fccff;
+  color: #0f5380;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+}
+
+.ClientTypes label:focus-within {
+  /* Styles for the label when radio button is focused or checked */
+  color: #0f5380 !important;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+  border: 1px solid #0f5380;
+}
+
+.FormItem img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.FormItem label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+}
+.FormItem input {
+  padding: 10px 3%;
+  margin-bottom: 12px;
+  border: 1px solid #0f53808c;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #3797d6;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+  margin-top: 5px;
+}
+.FormItem input::placeholder {
+  color: #d2d2d2;
+}
+.FormItem input:focus {
+  box-shadow: 0 0 12px #0d2e4e36;
+  background-color: white;
+  border: 1px solid #0f5380;
+  color: #0f5380;
+}
+.FormItem select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  color: #0f5380;
+  margin-bottom: 12px;
+  box-shadow: 0 0 12px #0d2e4e36;
+}
+.FormItem select:focus {
+  border: none;
+  border: 1px solid white;
+}
+
+.FormItem select option {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px 0;
+  color: #0f5380;
+}
+.AddService {
+  width: 152px;
+  height: 40px;
+  border-radius: 16px;
+  border: none;
+  text-align: center;
+  background: linear-gradient(77.62deg, #0d2e4f 2.96%, #0f5280 63.71%);
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.AddService img {
+  margin-right: 5px;
+}
+.TableHeada {
+  width: 100%;
+}
+
+.TableBody {
+  width: 100%;
+}
+.TableBodyFirstTd {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.TableBodyLastTd {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.TableBody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #0f5380;
+  background: #e0f3ff57;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.TableBody tr:hover div {
+  background: #ffffff;
+  transform: scaleY(1.2);
+}
+.TableBody li span {
+  width: 18%;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0f5380;
+}
+.BodyUserNot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+}
+.NoteUserInfo {
+  margin-right: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.NoteUserInfo label {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+  z-index: 1;
+}
+.NoteUserInfo span {
+  width: 100%;
+  border-radius: 14px;
+  background: #f4fbff;
+  padding: 15px 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+  z-index: 1;
+}
+.NoteUserInfo span img {
+  float: right;
+}
+.UserInfos {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+.UserInfo {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+.NewSericeTable {
+  width: 100%;
+  padding: 10px 0;
+  border-collapse: collapse;
+}
+.TableServiceBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.TableHeada tr {
+  width: 100%;
+}
+.TableHeada tr th {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  padding: 30px 0px;
+  color: #6fccff;
+}
+
+.TableServiceBody li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #e0f3ff57;
+  border-radius: 18px;
+  padding: 15px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.TableServiceBody li:hover {
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0px 12px 28px 0px #648bb02e;
+  background: linear-gradient(88.91deg, #0d2e4e -1.98%, #0f5380 54.34%);
+}
+.BodyUserNot .FormItem {
+  width: 50%;
+}
+.NoteUserInfo {
+  width: 24%;
+  margin: 0;
+}
+.BodySearch {
+  width: 30%;
+}
+.BodySearch .FormItems {
+  width: 100%;
+  flex-direction: column !important;
+}
+.BodySearch .FormItem {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.BodySearch .FormItem div {
+  width: 70%;
+}
+.BodySearch .FormItem button {
+  width: 25%;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(77.62deg, #0d2e4f 2.96%, #0f5280 63.71%);
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  cursor: pointer;
+  color: white;
+  margin-top: 8px;
+}
+
+.BodyForm {
+  width: 65%;
+}
+.BodyInfoForm {
+  width: 100%;
+  margin: 0px 10px;
+}
+.formNone {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .container {
+    padding: 10px;
+  }
+  .HeadTitle h3 {
+    font-size: 18px;
+  }
+  .Head {
+    padding: 10px 20px;
+  }
+  .HeadAddButton {
+    width: 150px;
+    height: 40px;
+  }
+  .HeadPrintButton {
+    width: 150px;
+    height: 40px;
+  }
+  .Filter {
+    padding: 8px;
+  }
+  .FilterActive {
+    padding: 8px;
+  }
+  .TableTd {
+    font-size: 15px;
+  }
+  .TableHeada tr th {
+    padding: 15px 0px;
+  }
+  .TableTr td div {
+    height: 40px;
+    margin-bottom: 13px;
+  }
+  .TableTr td div {
+    font-size: 15px;
+  }
+  .ModalTitle {
+    border-radius: 0.3cm;
+    padding: 12px 10px;
+  }
+  .ModalContainer .InputContainer .Input {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  .ModalContainer {
+    padding: 5px 10px;
+  }
+  .ModalTitle .Button {
+    width: 30px;
+    height: 30px;
+  }
+  .EditButton {
+    width: 20%;
+    margin-top: -45px;
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+  .FilterItem input {
+    height: 35px;
+    font-size: 14px;
+  }
+  .BodySearch .FormItem button {
+    width: 22%;
+    padding: 10px;
+    height: 35px;
+  }
+  .BodySearch {
+    height: 110px;
+  }
+
+  .UserInfos {
+    padding: 0;
+  }
+
+  .ModalContainer .Inputs {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .InputContainer select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #0f5380;
+    color: #0f5380;
+  }
+  .FilterItem select option {
+    font-size: 14px;
+  }
+  .FilterItem select {
+    height: 35px;
+  }
+  .switchlabel {
+    width: 60px;
+  }
+  .switchlabel .switchbutton {
+    width: 24px;
+    height: 26px;
+  }
+  .ClientTypes label {
+    width: 20%;
+  }
+  .FormItem input {
+    height: 35px;
+    font-size: 14px;
+  }
+  .HeadAddButton span {
+    font-size: 16px;
+  }
+  .NoteUserInfo span {
+    padding: 10px 10px;
+    margin-top: 5px;
+  }
+}

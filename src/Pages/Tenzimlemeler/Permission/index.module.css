@@ -1,0 +1,217 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Head {
+  padding: 5px 30px;
+  font-size: 30px;
+  background: #6fc7ff36;
+  border-radius: 18px;
+  align-items: center;
+  margin: 10px;
+}
+.HeadTitle h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+}
+.Body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.ResetButton {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(77.62deg, #0d2e4f 2.96%, #0f5280 63.71%);
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  cursor: pointer;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.ResetButton img {
+  margin-bottom: 5px;
+}
+.HeadMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeadBody {
+  width: 14%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.HeadBody li {
+  width: 90%;
+  list-style: none;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.HeadBody li a {
+  text-decoration: none;
+}
+
+.Table {
+  border-collapse: initial;
+  border-spacing: 12px;
+  text-align: center !important;
+  width: 100%;
+}
+
+.TableHeada {
+  width: 100%;
+}
+.TableHeada tr {
+  box-shadow: 0 7px 20px 0 #64646f33;
+  transition: 0.5s;
+  border: 1px solid #0d2e4f;
+}
+.TableBody tr{
+  box-shadow: 0 7px 20px 0 #64646f33;
+    transition: 0.5s;
+}
+.TableHeada tr th {
+  font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    padding: 20px 0px;
+    color: #6fccff;
+    border: none;
+}
+.TableBody {
+  width: 100%;
+}
+.TableBody tr td{
+  padding: 10px 10px;
+    font-size: 12px;
+    color: #0f5380;
+}
+.switchcheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switchlabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 64px;
+  height: 25px;
+  background: grey;
+  border-radius: 70px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+.actionTd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switchlabel .switchbutton {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 23px;
+  height: 21px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.switchcheckbox:checked + .switchlabel .switchbutton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switchlabel:active .switchbutton {
+  width: 60px;
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+ 
+
+ 
+  .ModalTitle {
+    border-radius: 0.3cm;
+    padding: 12px 10px;
+  }
+  .ModalContainer .InputContainer .Input {
+    margin-bottom: 5px;
+    padding: 8px;
+  }
+  .ModalContainer {
+    padding: 5px 10px;
+  }
+  .ModalTitle .Button {
+    width: 30px;
+    height: 30px;
+  }
+  .EditButton {
+    width: 13%;
+    margin-top: -50px;
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+  .FilterItem input {
+    height: 35px;
+    font-size: 14px;
+  }
+  .SearchButton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .ModalContainer .Inputs {
+    width: 100%;
+    margin: 10px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .InputContainer select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #0f5380;
+  }
+  .FilterItem select option {
+    font-size: 14px;
+  }
+  .FilterItem select {
+    height: 35px;
+  }
+
+
+  .HeadBody {
+    width: 12%;
+  }
+}

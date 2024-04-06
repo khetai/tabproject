@@ -1,0 +1,36 @@
+.bottomrighterror {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: brown;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 8px;
+  z-index: 9999999;
+  animation: anime 5s both;
+}
+.bottomrightSuccess {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  background: rgb(58, 185, 47);
+  opacity: 0.7;
+  padding: 20px 25px;
+  color: white;
+  border-radius: 8px;
+  z-index: 9999999;
+  animation: anime 2s both;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

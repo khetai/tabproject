@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.head_search {
+  position: relative;
+}
+.head_search img {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+
+.head_search input {
+  width: 400px;
+  padding: 0 40px;
+  height: 55px;
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.head_search input:hover {
+  border: 1px solid #0f5380;
+  box-shadow: 0px 12px 43px 0px #6e8ca940;
+}
+.head_search input:focus {
+  border: 1px solid #0f5380;
+  box-shadow: 0 0 12px #0d2e4e36;
+}
+.head_userinfo ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.head_userinfo ul li {
+  margin-right: 10px;
+}
+.userName {
+  padding: 20px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  color: rgb(15, 83, 128);
+  font-weight: 500;
+}
+.head_userinfo ul li button {
+  width: 130.29px;
+  height: 55px;
+  border: none;
+  border-radius: 16px;
+  background: #6fccff;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.head_userinfo ul li button span {
+  margin-left: 6px;
+  font-size: 14px;
+}
+.userinfoicon {
+  padding: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 5px 16px 0px #94a0b740;
+  cursor: pointer;
+}
+@media (width: 1280px) {
+  .head_search input {
+    width: 350px;
+    padding: 0 10px;
+    height: 50px;
+  }
+  .head_userinfo ul li button {
+    width: 100px;
+    height: 40px;
+  }
+  .userName {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .userinfoicon {
+    width: 40px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  header {
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px !important;
+  }
+  .head_userinfo ul li button {
+    width: 125.29px;
+    height: 38px;
+  }
+  .userName {
+    padding: 10px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .userinfoicon {
+    padding: 8px;
+  }
+  .head_search input {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .userName {
+    padding: 15px;
+    height: 40px;
+  }
+  .userinfoicon {
+    padding: 10px;
+  }
+  .head_search img {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    right: 10px;
+    z-index: 10000;
+  }
+}
+.NoteLi {
+  position: relative;
+}
+.NoteCount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(29, 46, 194);
+  border-radius: 50%;
+  color: white;
+  padding: 0px 5px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  header {
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px !important;
+  }
+  .head_userinfo ul li button {
+    width: 125.29px;
+    height: 38px;
+  }
+  .userName {
+    padding: 10px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .userinfoicon {
+    padding: 8px;
+  }
+  .head_search input {
+    width: 380px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .head_search img {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    right: 10px;
+    z-index: 10000;
+  }
+}

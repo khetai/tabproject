@@ -1,0 +1,429 @@
+.Main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Head {
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #0e4973;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10px;
+}
+.shortItem {
+  width: 48% !important;
+}
+.HeadTitle h3 {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.HeadMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeadBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.HeadBody li {
+  list-style: none;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.HeadBody li a {
+  text-decoration: none;
+}
+.Notification {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px 0; */
+  overflow-y: scroll;
+}
+
+.HeadAddButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  box-shadow: 0px 4px 17px 0px #8693a740;
+  /* color: black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.HeadAddButton img {
+  margin-right: 10px;
+  filter: invert(1);
+}
+.HeadAddButton span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0d3458;
+}
+/* For WebKit browsers */
+/* Track */
+::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scrollbar handle */
+  border-radius: 6px; /* roundness of the scrollbar handle */
+  margin: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* color of the scrollbar handle on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; /* color of the scrollbar track */
+  margin: 10px;
+}
+
+/* Handle when scrolling */
+::-webkit-scrollbar-thumb:active {
+  background-color: #555; /* color of the scrollbar handle when clicking and dragging */
+}
+
+.Notification li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding: 5px 40px; */
+  margin-top: 10px;
+}
+.Notification p {
+  font-size: 14px;
+}
+.Bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.BellDiv {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f3ff;
+  border-radius: 100%;
+}
+.Bell::before {
+  width: 100px;
+  transform: rotate(90deg);
+  position: absolute;
+  content: "";
+  display: block;
+  border-top: 1px solid #e8e8e8;
+}
+.bell i {
+  color: #0f507c;
+  font-size: 14px;
+}
+
+.Bell img.active {
+  width: 30px;
+  box-shadow: 0px 4px 11px 0px #7896ba42;
+  background: #6fccff;
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.Bell img.deactive {
+  width: 31px;
+  box-shadow: 0px 4px 11px 0px #7896ba42;
+  background: #0d2e4f;
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.Message {
+  background: #f6f6f6;
+  width: 94%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  font-size: 14px !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.MessageTime {
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+}
+.MessageTime span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+.MessageTime img {
+  margin-right: 10px;
+}
+.modalBody {
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 5px 16px 0px #94a0b740;
+}
+.modalText {
+  padding: 20px 0;
+}
+
+.FormItems {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.FormItem {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.FormItem img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.FormItem label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+  margin-bottom: 5px;
+}
+.FormItem input {
+  padding: 10px 2%;
+  border: 1px solid #0f53808c;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #3797d6 !important;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+}
+.FormItem textarea {
+  padding: 10px;
+  /* border: 1px solid #0f53808c; */
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #3797d6 !important;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-shadow: 0px 8px 19px 0px #688ab11a;
+  margin-top: 5px;
+}
+.FormItem input::placeholder {
+  color: #3797d6 !important;
+}
+.FormItem input:focus {
+  box-shadow: 0 0 12px #0d2e4e36;
+  background-color: white;
+  border: 1px solid #0f5380;
+  color: #3797d6;
+}
+.FilterItem label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+  margin-bottom: 5px;
+}
+.NotiModal {
+  padding: 30px 0px;
+}
+.FilterItem {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.Formbutton {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+}
+.FilterItem select {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 15px;
+  font-size: 15px;
+  border: none;
+  color: #0f5380;
+  margin-bottom: 12px;
+  box-shadow: 0 0 12px #0d2e4e36;
+  border: 1px solid #0f53808c;
+}
+.FilterItem select:focus {
+  border: none;
+  border: 1px solid white;
+}
+
+.FilterItem select option {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px 0;
+  color: #0f5380;
+}
+.MessageText {
+  cursor: pointer;
+  width: 50%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f5380;
+}
+.NoteBtns {
+  width: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.DeleteBtn {
+  border-radius: 16px;
+
+  border: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+.editbtnnot {
+  width: 20px;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .Bell img.deactive {
+    width: 30px;
+  }
+  .FilterItem select {
+    padding: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .FilterItem select option {
+    font-size: 14px;
+  }
+
+  .FormItems {
+    padding: 5px 0;
+  }
+  #statusheaderadd {
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .FormItem textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .modalBody {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 5px 16px 0px #94a0b740;
+  }
+  .modalBody h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .modalBody h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .modalBody h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .modalText {
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+  }
+}
