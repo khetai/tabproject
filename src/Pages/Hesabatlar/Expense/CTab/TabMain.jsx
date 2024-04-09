@@ -65,7 +65,7 @@ export default function TabMain() {
             className={style.tabs}
             values={tabs}
           >
-            <AnimatePresence initial={false}>
+            <AnimatePresence initial={true} animate={false}>
               {tabs.map(item => (
                 <Tab
                   key={item.label}

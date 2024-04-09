@@ -8,14 +8,14 @@ export const Tab = ({ item, onClick, onRemove, isSelected }) => {
     <Reorder.Item
       value={item}
       id={item.label}
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, x: 30 }}
       animate={{
         opacity: 1,
         backgroundColor: isSelected ? "#f3f3f3" : "#fff",
-        y: 0,
+        x: 0,
         transition: { duration: 0.15 },
       }}
-      exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
+      exit={{ opacity: 0, x: 20, transition: { duration: 0.1 } }}
       whileDrag={{ backgroundColor: "#e3e3e3" }}
       className={isSelected ? style.selected : style.tabli}
       onPointerDown={onClick}
